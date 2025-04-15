@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StudioZ26</title>
+  <link rel="stylesheet" href="src/output.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/x-icon" href="./asset/camicon.png">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <script defer src="script.js"></script>
+
+</head>
+
+<body class="overflow-x-hidden scroll-smooth">
+
+  <!-- infinite text -->
+  <section class="bg-pink-600 backdrop-blur-sm  flex items-center justify-center w-screen overflow-hidden">
+    <div class="scrolling-wrapper w-full">
+      <div class="scrolling-text text-white text-sm sm:text-sm font-bold flex min-w-full">
+        <span>📷 Studio Z 26 - Capturing Memories, Creating Art</span>
+        <span>📸 DEBASISH PRAMANIK - Founder & Lead Photographer</span>
+        <span>📞 Contact: +91 79080 86574</span>
+        <span>🔥 Elevate Your Moments with Professional Photography</span>
+        <span>💻 Stunning Visuals, Timeless Storytelling</span>
+        <span>🚀 Expert in Weddings, Portraits, and Creative Shoots</span>
+        <span>✨ Bringing Your Vision to Life, One Click at a Time</span>
+        <span>🎥 Premium-Quality Cinematography</span>
+        <span>📷 Studio Z26 - Your Story, Our Lens</span>
+        <span>🌍 Available for Destination Photography Worldwide</span>
+
+        <!-- Duplicate for seamless loop -->
+        <span>📷 Studio Z 26 - Capturing Memories, Creating Art</span>
+        <span>📸 DEBASISH PRAMANIK- Founder & Lead Photographer</span>
+        <span>📞 Contact: +91 79080 86574</span>
+        <span>🔥 Elevate Your Moments with Professional Photography</span>
+        <span>💻 Stunning Visuals, Timeless Storytelling</span>
+        <span>🚀 Expert in Weddings, Portraits, and Creative Shoots</span>
+        <span>✨ Bringing Your Vision to Life, One Click at a Time</span>
+        <span>🎥 Premium-Quality Cinematography</span>
+        <span>📷 Studio Z 26 - Your Story, Our Lens</span>
+        <span>🌍 Available for Destination Photography Worldwide</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- navbar -->
+  <section>
+    <nav class="bg-[#190140] ">
+      <div class="container mx-auto flex justify-between items-center">
+        <img src="./asset/LOGO  - STUDIO Z26_PNG.png" class="w-28">
+        <button id="menu-btn" class="block sm:hidden focus:outline-none text-white ">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul id="menu" class="hidden sm:flex space-x-6 py-2 mt-2 text-xl  ">
+          <li><a href="#" class=" hover:scale-105 text-white no-underline ">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-400 text-white no-underline">About</a></li>
+          <li><a href="#service" class="hover:text-yellow-400 text-white no-underline">Services</a></li>
+          <li><a href="#Contact" class="hover:text-yellow-400 text-white no-underline">Contact</a></li>
+          <li><a href="#albums" class="hover:text-yellow-400 text-white no-underline">Albums</a></li>
+          <li><a href="review.html" class="hover:text-yellow-400 text-white no-underline">Reviews</a></li>
+        </ul>
+
+      </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden sm:hidden bg-[#190140] shadow-inner shadow-black p-6 space-y-4 overflow-x-hidden">
+        <a href="index.html"
+          class="block py-2  hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Home</a>
+        <a href="#about"
+          class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">About</a>
+        <a href="#service"
+          class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Services</a>
+        <a href="#Contact"
+          class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Contact</a>
+          <a href="#albums" class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Albums</a>
+        <a href="review.html" class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Reviews</a>
+
+        <hr class="w-68 h-1 mx-auto  bg-white border-0 rounded-lg ">
+
+        <div class="text-2xl text-center space-x-1">
+          <a href=" https://www.facebook.com/z26music" target="_blank"><i class="fa-brands fa-facebook text-white p-2"></i></a>
+          <a href="https://www.instagram.com/studio_z_26/"><i class="fa-brands fa-instagram text-white p-2"></i></a>
+          <a href="https://www.youtube.com/@studioz2638"><i class="fa-brands fa-youtube text-white p-2"></i></a>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- carousel -->
+  <section>
+    <div id="carouselExampleCaptions" class="carousel slide w-100 " data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+          aria-label="Slide 4"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+          aria-label="Slide 5"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+          aria-label="Slide 6"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+          aria-label="Slide 7"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./asset/SLIDE 06.jpg" class="d-block w-100" alt="First Slide">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/slide1.jpg " class="d-block w-100" alt="Second Slide">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/SLIDE 07.jpg " class="d-block w-100" alt="Third Slide">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./asset//SLIDE 02.jpg" class="d-block w-100" alt="Third Slide">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/SLIDE 03~1.jpg" class="d-block w-100" alt="Third Slide">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/SLIDE 04~1.jpg" class="d-block w-100" alt="Third Slide">
+
+        </div>
+        <div class="carousel-item">
+          <img src="./asset/SLIDE 05~1.jpg" class="d-block w-100" alt="Third Slide">
+
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- galler -->
+  <section class="bg-pink-200/20 py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="md:text-5xl text-4xl font-bold text-gray-800 mb-8">Our <span class="text-pink-600"> Gallery</span></h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Retro Style -->
+        <a href="./retro.html"
+          class="bg-white rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden block no-underline">
+          <img src="./asset/slide1.jpg" alt="Retro Style" class="w-full h-56 object-cover ">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-700  ">Retro Style Pre Wedding</h3>
+          </div>
+        </a>
+        <!-- Western -->
+        <a href="western.html"
+          class="bg-white rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden block no-underline">
+          <img src=" ./asset/F.jpg" alt="Western" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-700">Western Style Pre Wedding</h3>
+          </div>
+        </a>
+        <!-- Pre-Wedding -->
+        <a href="prewed.html"
+          class="bg-white rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden block no-underline">
+          <img src="./asset/prewed.jpg" alt="Pre-Wedding" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-700">Pre & Post Wedding</h3>
+          </div>
+        </a>
+        <!-- Wedding Moments -->
+        <a href="wedding.html"
+          class="bg-white rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden block no-underline">
+          <img src="./asset/wed.jpg" alt="Wedding Moments" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-700">Wedding Photography</h3>
+          </div>
+        </a>
+        <!-- candid -->
+        <a href="candid.html"
+          class="bg-white rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden block no-underline">
+          <img src="./candidpics/013.jpg" alt="Model Shoot" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-700">Candid Photography</h3>
+          </div>
+        </a>
+        <!--rice ceremony -->
+        <a href="rceremony.html"
+          class="bg-white rounded-2xl shadow-lg hover:scale-105 duration-500 overflow-hidden block no-underline">
+          <img src="./riceceremonypics/2.jpg" alt="Bengali Pre-Wedding" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-bold text-gray-700">Rice Ceremony & Birthday</h3>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- About Us Section -->
+  <section id="about" class="max-w-7xl mx-auto px-6 py-12 ">
+    <h2 class="text-4xl md:text-5xl font-bold text-gray-900 text-center pt-8 mb-14">About <span class="text-pink-600">Us</span></h2>
+   
+
+    <div class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Left Side: Founder Image & Info -->
+      <div class="relative w-full md:w-1/4 text-center md:text-left">
+        <img src="./asset/FOUNDER.jpg" alt="Founder" class="w-full rounded-lg shadow-lg mb-4">
+        <div class="absolute bottom-4 left-4 bg-stone-800/60  text-white px-4 py-2 rounded-lg">
+          <h3 class="text-xl font-semibold">DEBASISH PRAMANIK</h3>
+          <p class="text-sm">Founder, Studio Z26 </p>
+
+        </div>
+      </div>
+
+      <!-- Right Side: Business Info -->
+      <div class="md:w-2/3">
+        <h1 class="text-2xl">Hi, I am the founder of <span class="text-red-600 font-bold ">Studio Z26 </span></h1>
+        <p class="text-lg text-gray-700 leading-relaxed">Welcome to our world of photography, where moments turn into
+          timeless memories. With over a decade of experience, we specialize in capturing emotions, stories, and beauty
+          through our lenses. Our dedication to excellence and creativity ensures that every shot we take is a
+          masterpiece.</p>
+
+        <h3 class="text-2xl font-semibold text-gray-900 mt-6">Why Choose Us?</h3>
+        <ul class="mt-4 space-y-3">
+          <li class="flex items-center"><span class="text-blue-500 text-xl mr-2">✔</span> We believe every pictures tells
+            a story</li>
+          <li class="flex items-center"><span class="text-blue-500 text-xl mr-2">✔</span>  We Provide Premium Quality PHOTO ALBUM</li>
+          <li class="flex items-center"><span class="text-blue-500 text-xl mr-2">✔</span> We also Provide Super Quality Cinamatography</li>
+          <li class="flex items-center"><span class="text-blue-500 text-xl mr-2">✔</span> Passionate and skilled team
+            dedicated to perfection</li>
+          <li class="flex items-center"><span class="text-blue-500 text-xl mr-2">✔</span>Budget worthy  wedding photography packages</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- live video -->
+  <div class="relative w-full h-screen overflow-hidden">
+    <video class="absolute inset-0 w-full h-full object-cover" autoplay loop muted>
+        <source src="./asset/BIJIT FINAL~2.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50">
+        <h1 class="text-white text-3xl md:text-6xl font-semibold text-center">
+            Wedding moments by<br>
+            <span class="text-yellow-400  font-bold">Studio Z26</span>
+        </h1>
+
+        <button type="button" onclick="window.location.href='https://www.youtube.com/watch?v=DzJGafjFQec'"
+            class="animate-bounce text-black bg-yellow-400 hover:bg-yellow-500 hover:shadow-md hover:shadow-black focus:outline-none focus:ring-4 focus:ring-red-300 font-medium rounded-full px-5 py-2.5 text-sm md:text-xl flex items-center gap-2 mt-10">
+            <i class="fa-brands fa-youtube text-lg md:text-xl"></i> Watch it Now
+        </button>
+    </div>
+</div>
+
+  <!-- our service -->
+  <section id="service" class="bg-yellow-100/30   py-12">
+    <div class="container mx-auto px-6 text-center">
+      <h2 class="text-4xl font-bold text-gray-800 mb-2">Our <span class="text-pink-600">Services</span></h2>
+      <p class="mb-10">One stop destination for make your ocation memorable</p>
+      <div class="grid md:grid-cols-3 gap-8 ">
+        <!-- Baby Photoshoot -->
+        <div
+          class="bg-white rounded-2xl shadow-xl hover:scale-105 hover:border-stone-700 hover:border-2 duration-300 overflow-hidden">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvhKNbBEEGzbHdJd5PJaJpzIrOGNU62m1bDQ&s"
+            alt="Baby Photoshoot" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-700">Rice Ceremony</h3>
+            <p class="text-gray-500 mt-2">Capture the adorable moments of your little one with our professional baby
+              photoshoots.</p>
+          </div>
+        </div>
+        <!-- Wedding Shoot -->
+        <div
+          class="bg-white rounded-2xl shadow-xl hover:scale-105 hover:border-stone-700 hover:border-2 duration-300 overflow-hidden">
+          <img src="./asset/wed.jpg" alt="Wedding Shoot" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-700">Wedding Photography</h3>
+            <p class="text-gray-500 mt-2">We make your big day unforgettable with stunning wedding photography.</p>
+          </div>
+        </div>
+        <!-- Pre-Wedding Shoot -->
+        <div
+          class="bg-white rounded-2xl shadow-xl hover:scale-105 hover:border-stone-700 hover:border-2 duration-300 overflow-hidden">
+          <img src="./asset/04.jpg" alt="Pre-Wedding Shoot" class="w-full h-56 object-cover">
+          <div class="p-6">
+            <h3 class="text-2xl font-semibold text-gray-700">Pre & Post Wedding </h3>
+            <p class="text-gray-500 mt-2">Beautifully crafted pre-wedding photos to cherish your love story.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <!-- service counter -->
+<section>
+  <div class="grid grid-cols-1 justify-self-center sm:grid-cols-2 lg:grid-cols-3 gap-4 p-2">
+    <!-- Counter Box 1 -->
+    <div class="bg-yellow-100 p-6 rounded-lg shadow-md text-center">
+        <img src="./asset/wedcounter.png" alt="Weddings" class="mx-auto mb-3 w-14">
+        <h2 class="text-3xl font-bold text-gray-800 counter" data-target="800">0+</h2>
+        <p class="text-gray-600">WEDDINGS</p>
+    </div>
+
+    <!-- Counter Box 2 -->
+    <div class="bg-yellow-100 p-6 rounded-lg shadow-md text-center">
+        <img src="./asset/prewedcounter.avif" alt="Pre Weddings" class="mx-auto mb-3 w-14">
+        <h2 class="text-3xl font-bold text-gray-800 counter" data-target="500">0+</h2>
+        <p class="text-gray-600">PRE WEDDINGS</p>
+    </div>
+
+    <!-- Counter Box 3 -->
+    <div class="bg-yellow-100 p-6 rounded-lg shadow-md text-center">
+        <img src="./asset/babycounter.avif" alt="Baby Photoshoots" class="mx-auto mb-3 w-14">
+        <h2 class="text-3xl font-bold text-gray-800 counter" data-target="250">0+</h2>
+        <p class="text-gray-600">BABY PHOTOSHOOTS</p>
+    </div>
+</div>
+</section>
+  <!-- album slider -->
+  <section id="albums" class="w-full  overflow-hidden relative ">
+
+    <div class="text-center p-4">
+      <img src="./asset/camicon.png" alt="icon" class="w-14 justify-self-center">
+      <h1 class="text-3xl font-semibold text-[#190140]"><span class="text-pink-600 font-bold">Studio Z26</span> offeres albums that are</h1>
+      <p1 class="md:text-5xl text-3xl text-red-500 font-bold">Premium quality,Handmade & beautiful.</p1>
+    </div>
+
+    <article id="banner" class="flex w-[200%] animate-banner">
+      <!-- First Row -->
+      <div class="w-full">
+        <ul class="flex list-none p-0 m-0 gap-x-4">
+          <li class="w-full bg-blue-500"><img src="/albums/albums (1).png" alt="Image 1"></li>
+          <li class="w-full bg-green-500"><img src="/albums/albums (2).png" alt="Image 2"></li>
+          <li class="w-full bg-yellow-500"><img src="/albums/albums (3).png" alt="Image 3"></li>
+          <li class="w-full bg-red-500"><img src="/albums/albums (4).png" alt="Image 4"></li>
+        </ul>
+      </div>
+
+      <!-- Second Row -->
+      <div class="w-full">
+        <ul class="flex list-none gap-x-4 p-0 m-0">
+          <li class="w-full bg-blue-500"><img src="/albums/albums (5).png" alt="Image 5"></li>
+          <li class="w-full bg-green-500"><img src="/albums/albums (6).png" alt="Image 6"></li>
+          <li class="w-full bg-yellow-500"><img src="/albums/albums (7).png" alt="Image 7"></li>
+          <li class="w-full bg-red-500"><img src="/albums/albums (8).png" alt="Image 8"></li>
+        </ul>
+      </div>
+    </article>
+  </section>
+
+  <!-- poem section-->
+  <section class="w-full mt-8">
+    <div class="w-full relative">
+      <!-- Background Image -->
+      <div class="relative">
+        <img src="./asset/background.jpg" class="w-full md:h-[520px] h-[600px]  object-cover ">
+      </div>
+
+      <!-- Text on Image -->
+      <div class="absolute inset-0 flex md:flex-row flex-col  justify-center sm:p-8 p-2 ">
+        <img src="/asset/LOGO  - STUDIO Z26_PNG.png" class="md:w-1/3 w-20 h-16 md:mt-0 mt-2 md:h-full  ">
+        <div class=" p-2 rounded-lg  md:max-w-lg text-center ">
+          <p class="text-yellow-400 sm:text-2xl text-lg leading-relaxed font-lipishree  whitespace-pre-line mt-8 sm:mt-0">
+            ক্যামেরার ফ্রেমে বাঁধি গল্প
+            আলোছায়ায় ফুটে ওঠে রূপকথা সব।
+            একটি ক্লিক, এক চিলতে স্মৃতি,
+            রঙিন ছবিতে জমে সুখের নীতি।
+
+            সময় গড়ায়, স্মৃতি থেকে যায়,
+            লেন্সের ভেতর গল্প বেঁচে রয়।
+            একেকটা ছবি একেকটা গান,
+            যেখানে বাঁধা হৃদয়ের প্রাণ!
+
+            তোমার মুহূর্ত, আমাদের ফ্রেম,
+            ভালবাসার ছোঁয়া, চিরসবুজ নেইম।
+            ছবির ভাষা বলে অন্তরের কথা,
+            ক্যামেরার চোখে জাগে অনুভূতির ব্যথা।
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- get in t ouch -->
+  <section id="Contact" class="bg-gray-100">
+    <div class="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:py-20 lg:px-8">
+      <div class="max-w-2xl lg:max-w-4xl mx-auto text-center">
+        <h2 class="md:text-6xl text-5xl font-extrabold text-gray-900">Visit Our <span class="text-pink-600">Location</span></h2>
+        <p class="mt-4 text-xl text-gray-500">Capture the Moment, Experience the Art</p>
+      </div>
+      <div class="mt-16 lg:mt-20">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="rounded-lg overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29293.01382300223!2d88.47768523291532!3d23.401717180270875!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f920440311b935%3A0x9cda677e2c6a67af!2sKrishnanagar%2C%20West%20Bengal!5e0!3m2!1sen!2sin!4v1742996654568!5m2!1sen!2sin"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div>
+            <div class="max-w-full mx-auto rounded-lg overflow-hidden">
+              <div class="px-6 py-4">
+                <h3 class="text-lg font-medium text-gray-900">Our Address</h3>
+                <p class="mt-1 text-gray-600">Krishnanagar, Nadia, West Bengal</p>
+              </div>
+              <div class="border-t border-gray-200 px-6 py-4">
+                <h3 class="text-lg font-medium text-gray-900">Hours</h3>
+                <p class="mt-1 text-gray-600">Monday - Friday: 11:00 A.M - 6:00 P.M </p>
+                <p class="mt-1 text-gray-600">Saturday: 11:00 A.M - 2:00 P.M</p>
+                <p class="mt-1 text-gray-600">Sunday: Closed</p>
+              </div>
+              <div class="border-t border-gray-200 px-6 py-4">
+                <h3 class="text-lg font-medium text-gray-900">Contact</h3>
+                <p class="mt-1 text-gray-600">Email: quick.studioz26@gmail.com</p>
+                <p class="mt-1 text-gray-600">Phone: +91 79080 86574</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  
+  <!-- whatsapp button -->
+  <a href=" https://wa.me/7908086574" target="_blank" rel="noreferrer noopener"
+    class="fixed bottom-4 right-4 z-50 inline-flex items-center justify-center w-14 h-14 rounded-full bg-[#25d366]">
+    <div class="absolute z-10 top-0 left-0 w-full h-full rounded-full bg-[#25d366] animate-ping"></div>
+    <div class="relative z-20">
+      <svg fill="#fff" height="24px" width="24px" version="1.1" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 308.00 308.00" xml:space="preserve" stroke="#fff"
+        transform="matrix(1, 0, 0, 1, 0, 0)">
+        <path
+          d="M227.904,176.981c-0.6-0.288-23.054-11.345-27.044-12.781c-1.629-0.585-3.374-1.156-5.23-1.156 c-3.032,0-5.579,1.511-7.563,4.479c-2.243,3.334-9.033,11.271-11.131,13.642c-0.274,0.313-0.648,0.687-0.872,0.687 c-0.201,0-3.676-1.431-4.728-1.888c-24.087-10.463-42.37-35.624-44.877-39.867c-0.358-0.61-0.373-0.887-0.376-0.887 c0.088-0.323,0.898-1.135,1.316-1.554c1.223-1.21,2.548-2.805,3.83-4.348c0.607-0.731,1.215-1.463,1.812-2.153 c1.86-2.164,2.688-3.844,3.648-5.79l0.503-1.011c2.344-4.657,0.342-8.587-0.305-9.856c-0.531-1.062-10.012-23.944-11.02-26.348 c-2.424-5.801-5.627-8.502-10.078-8.502c-0.413,0,0,0-1.732,0.073c-2.109,0.089-13.594,1.601-18.672,4.802 c-5.385,3.395-14.495,14.217-14.495,33.249c0,17.129,10.87,33.302,15.537,39.453c0.116,0.155,0.329,0.47,0.638,0.922 c17.873,26.102,40.154,45.446,62.741,54.469c21.745,8.686,32.042,9.69,37.896,9.69c0.001,0,0.001,0,0.001,0 c2.46,0,4.429-0.193,6.166-0.364l1.102-0.105c7.512-0.666,24.02-9.22,27.775-19.655c2.958-8.219,3.738-17.199,1.77-20.458 C233.168,179.508,230.845,178.393,227.904,176.981z" />
+        <path
+          d="M156.734,0C73.318,0,5.454,67.354,5.454,150.143c0,26.777,7.166,52.988,20.741,75.928L0.212,302.716 c-0.484,1.429-0.124,3.009,0.933,4.085C1.908,307.58,2.943,308,4,308c0.405,0,0.813-0.061,1.211-0.188l79.92-25.396 c21.87,11.685,46.588,17.853,71.604,17.853C240.143,300.27,308,232.923,308,150.143C308,67.354,240.143,0,156.734,0z M156.734,268.994c-23.539,0-46.338-6.797-65.936-19.657c-0.659-0.433-1.424-0.655-2.194-0.655c-0.407,0-0.815,0.062-1.212,0.188 l-40.035,12.726l12.924-38.129c0.418-1.234,0.209-2.595-0.561-3.647c-14.924-20.392-22.813-44.485-22.813-69.677 c0-65.543,53.754-118.867,119.826-118.867c66.064,0,119.812,53.324,119.812,118.867 C276.546,215.678,222.799,268.994,156.734,268.994z" />
+      </svg>
+    </div>
+  </a>
+  <!-- footer  -->
+  <footer class="bg-[#190140]">
+    <div class="mx-auto max-w-screen-xl space-y-4 px-4 py-6 sm:px-6 lg:space-y-12 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
+        <div>
+          <div class="text-teal-600">
+            <img src="./asset/LOGO  - STUDIO Z26_PNG.png" class="w-[180px]">
+          </div>
+
+          <p class="mt-4 max-w-xs text-white">
+            Your love story deserves stunning visuals. Contact us to plan your iconic cinematic wedding today.
+          </p>
+          <hr class="w-42 h-1 mx-auto  bg-white border-0 rounded-lg ">
+          <ul class="mt-8 flex gap-6">
+            <li>
+              <a href="https://www.facebook.com/z26music" rel="noreferrer" target="_blank" class="text-white transition hover:opacity-75">
+                <span class="sr-only">Facebook</span>
+
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/studio_z_26/" rel="noreferrer" target="_blank" class="text-white transition hover:opacity-75">
+                <span class="sr-only">Instagram</span>
+
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@studioz2638" rel="noreferrer" target="_blank"
+                class="text-white transition hover:opacity-75">
+                <span class="sr-only">Youtube</span>
+
+                <i class="fa-brands fa-youtube text-white  text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-1 gap-14 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4 sm:mt-8">
+          <div>
+            <p class="font-medium text-white ml-8">Services</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-white no-underline  transition hover:opacity-75"> Pre & post wedding</a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75"> Wedding </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75"> Maternity </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75"> Baby photoshoot </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75">Model shoot </a>
+              </li>
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75">Rice Ceremony </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-white ml-8">Company</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75 no-underline"> About </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75 no-underline"> Meet the Team </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75 no-underline"> Accounts Review </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-white ml-8">Helpful Links</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75"> Contact </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75"> FAQs </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75"> Live Chat </a>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+      <p class="text-sm text-gray-200">&copy; 2025.StudioZ26. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- ******************************** script section ******************************** -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

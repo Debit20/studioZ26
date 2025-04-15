@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudioZ26</title>
+    <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./asset/camicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Preloader -->
+  <div id="preloader" class="fixed inset-0 bg-white z-50 flex items-center justify-center">
+    <div class="animate-spin rounded-full h-16 w-16 border-t-4 border-b-4 border-black"></div>
+  </div>
+       <!-- navbar -->
+  <section>
+    <nav class="bg-[#190140] ">
+      <div class="container mx-auto flex justify-between items-center">
+        <img src="./asset/LOGO  - STUDIO Z26_PNG.png" class="w-28">
+        <button id="menu-btn" class="block sm:hidden focus:outline-none text-white ">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+          </svg>
+        </button>
+        <ul id="menu" class="hidden sm:flex space-x-6 py-2 mt-2 text-xl  ">
+          <li><a href="index.html" class=" text-white no-underline ">Home</a></li>
+          <li><a href="#about" class="hover:text-yellow-400 text-white no-underline">About</a></li>
+          <li><a href="#service" class="hover:text-yellow-400 text-white no-underline">Services</a></li>
+          <li><a href="#Contact" class="hover:text-yellow-400 text-white no-underline">Contact</a></li>
+          <li><a href="#albums" class="hover:text-yellow-400 text-white no-underline">Albums</a></li>
+          <li><a href="review.html" class="hover:text-yellow-400 text-white no-underline">Reviews</a></li>
+        </ul>
+
+      </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden sm:hidden bg-[#190140] shadow-inner shadow-black p-6 space-y-4 overflow-x-hidden">
+        <a href="index.html"
+          class="block py-2  hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Home</a>
+        <a href="index.html"
+          class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">About</a>
+        <a href="index.html"
+          class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Services</a>
+        <a href="index.html"
+          class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Contact</a>
+          <a href="index.html" class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Albums</a>
+        <a href="review.html" class="block py-2 hover:text-yellow-400 no-underline text-white border-2 border-stone-600 p-4 rounded-xl shadow-inner  shadow-black ">Reviews</a>
+
+        <hr class="w-68 h-1 mx-auto  bg-white border-0 rounded-lg ">
+
+        <div class="text-2xl text-center space-x-1">
+          <a href=" https://www.facebook.com/z26music" target="_blank"><i class="fa-brands fa-facebook text-white p-2"></i></a>
+          <a href="https://www.instagram.com/studio_z_26/"><i class="fa-brands fa-instagram text-white p-2"></i></a>
+          <a href="https://www.youtube.com/@studioz2638"><i class="fa-brands fa-youtube text-white p-2"></i></a>
+        </div>
+      </div>
+    </nav>
+  </section>
+    <!-- head gallery -->
+     <img src="./wedding photography/weddbanner.jpg" >
+
+    <!-- gallerry -->
+    <section class="bg-gray-100 py-12">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold text-gray-800 mb-8">Our Wedding Gallery</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <!-- Gallery Items -->
+                <template id="gallery-template">
+                    <div class="relative group overflow-hidden rounded-2xl shadow-lg hover:shadow-xl transition duration-300 cursor-pointer" onclick="openModal(this)">
+                        <img src="" loading="lazy" alt="Gallery Image" class="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-300">
+                        <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <p class="text-white text-lg font-semibold"></p>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </section>
+    
+  <!-- Modal -->
+  <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center z-50 hidden transition-all duration-200  ">
+    <span class="absolute top-6 right-8 text-white text-4xl cursor-pointer z-50" onclick="closeModal()">&times;</span>
+    <img id="modalImage" src="" loading="eager" alt="Expanded Image"
+      class="max-w-[95vw] max-h-[90vh] object-contain rounded-xl shadow-2xl transition-all duration-300">
+  </div>
+    
+           <!-- footer  -->
+  <footer class="bg-[#190140]">
+    <div class="mx-auto max-w-screen-xl space-y-4 px-4 py-6 sm:px-6 lg:space-y-12 lg:px-8">
+      <div class="grid grid-cols-1 gap-8 lg:grid-cols-3 ">
+        <div>
+          <div class="text-teal-600">
+            <img src="./asset/LOGO  - STUDIO Z26_PNG.png" class="w-[180px]">
+          </div>
+
+          <p class="mt-4 max-w-xs text-white">
+            Your love story deserves stunning visuals. Contact us to plan your iconic cinematic wedding today.
+          </p>
+          <hr class="w-42 h-1 mx-auto  bg-white border-0 rounded-lg ">
+          <ul class="mt-8 flex gap-6">
+            <li>
+              <a href="https://www.facebook.com/z26music" rel="noreferrer" target="_blank" class="text-white transition hover:opacity-75">
+                <span class="sr-only">Facebook</span>
+
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/studio_z_26/" rel="noreferrer" target="_blank" class="text-white transition hover:opacity-75">
+                <span class="sr-only">Instagram</span>
+
+                <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path fill-rule="evenodd"
+                    d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                    clip-rule="evenodd" />
+                </svg>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.youtube.com/@studioz2638" rel="noreferrer" target="_blank"
+                class="text-white transition hover:opacity-75">
+                <span class="sr-only">Youtube</span>
+
+                <i class="fa-brands fa-youtube text-white  text-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="grid grid-cols-1 gap-14 sm:grid-cols-2 lg:col-span-2 lg:grid-cols-4 sm:mt-8">
+          <div>
+            <p class="font-medium text-white ml-8">Services</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-white no-underline  transition hover:opacity-75"> Pre & post wedding</a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75"> Wedding </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75"> Maternity </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75"> Baby photoshoot </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75">Model shoot </a>
+              </li>
+              <li>
+                <a href="#" class="text-white no-underline transition hover:opacity-75">Rice Ceremony </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-white ml-8">Company</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75 no-underline"> About </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75 no-underline"> Meet the Team </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75 no-underline"> Accounts Review </a>
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="font-medium text-white ml-8">Helpful Links</p>
+
+            <ul class="mt-6 space-y-4 text-sm">
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75"> Contact </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75"> FAQs </a>
+              </li>
+
+              <li>
+                <a href="#" class="text-white transition hover:opacity-75"> Live Chat </a>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+      </div>
+
+      <p class="text-sm text-gray-200">&copy; 2025.StudioZ26. All rights reserved.</p>
+    </div>
+  </footer>
+          
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const galleryContainer = document.querySelector(".grid");
+            const template = document.getElementById("gallery-template");
+            const imageSources = [
+           "wedding photography/wed (1).avif",
+           "wedding photography/wed (2).avif",
+           "wedding photography/wed (3).avif",
+           "wedding photography/wed (4).avif",
+           "wedding photography/wed (5).avif",
+           "wedding photography/wed (6).avif",
+           "wedding photography/wed (7).avif",
+           "wedding photography/wed (8).avif",
+           "wedding photography/wed (9).avif",
+           "wedding photography/wed (10).avif",
+           "wedding photography/wed (11).avif",
+           "wedding photography/wed (12).avif",
+           "wedding photography/wed (13).avif",
+           "wedding photography/wed (14).avif",
+           "wedding photography/wed (15).avif",
+           
+            "wedding photography/wed (17).avif",
+            "wedding photography/wed (18).avif",
+            "wedding photography/wed (19).avif",
+            "wedding photography/wed (16).avif",
+            "wedding photography/wed (21).avif",
+                
+              ];
+            
+            imageSources.forEach((src, index) => {
+                let clone = template.content.cloneNode(true);
+                let img = clone.querySelector("img");
+                let caption = clone.querySelector("p");
+                img.src = src;
+                img.alt = `Gallery Image ${index + 1}`;
+                caption.textContent = `Photo ${index + 1}`;
+                galleryContainer.appendChild(clone);
+            });
+        });
+    
+        function openModal(element) {
+            const modal = document.getElementById("imageModal");
+            const modalImage = document.getElementById("modalImage");
+            modalImage.src = element.querySelector("img").src;
+            modal.classList.remove("hidden");
+        }
+    
+        function closeModal() {
+            document.getElementById("imageModal").classList.add("hidden");
+        }
+    </script>
+
+
+
+    
+    <!-- for responsive navbar -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+      <!-- preloader  -->
+  <script>
+    window.addEventListener("load", () => {
+      const preloader = document.getElementById("preloader");
+      preloader.classList.add("opacity-0", "transition-opacity", "duration-500");
+      setTimeout(() => {
+        preloader.style.display = "none";
+      }, 1000); // wait for fade-out
+    });
+  </script>
+    
+</body>
+</html>
